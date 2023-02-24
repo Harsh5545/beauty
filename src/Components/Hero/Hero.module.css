@@ -1,0 +1,11 @@
+.HeroWrapper {
+    height: '160px';
+    color: '#fff';
+    line-height: '160px';
+    text-align: 'center';
+    background: '#364d79';
+  }
+  .heroImage{
+    width: 100vw;
+    height:100vh;
+  }

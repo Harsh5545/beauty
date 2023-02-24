@@ -1,0 +1,41 @@
+.ServicesContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem 0rem;  
+    background-image: url('https://img.freepik.com/premium-photo/set-cosmetic-tools-manicure-pedicure-blue-background-creative-composition-template-beauty-salon-with-place-text_113876-2597.jpg?w=2000');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height:90vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+.ServicesContainer h1{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0.5rem;
+  }
+  .gridItem {
+    background-color: rgba(255, 255, 255, 0.8);
+   padding: 2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .gridItem img{
+    width: 5rem;
+    height:5rem
+  }
+  .gridItem span{
+    font-size: 1.6rem;
+    margin: 0.5rem;
+  }

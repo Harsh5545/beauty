@@ -1,0 +1,42 @@
+.PricingContainer h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    margin: 2rem 8rem;
+  }
+  .gridItem {
+    background-color: #78BBF1;
+    padding: 0.2rem 1rem;
+    margin: 1.5rem 1.5rem;
+    font-size:1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px)   ;
+  /* opacity: 0.8; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    
+  }
+  .gridItem h1{
+    font-size: 1.6rem;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+  }
+  .massage p{
+    font-size: 1rem;
+  }
+  .money{
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+  .gridItem.black {
+    backdrop-filter: brightness(50%) blur(5px);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
