@@ -1,11 +1,16 @@
 .HeroWrapper {
-    height: '160px';
-    color: '#fff';
-    line-height: '160px';
-    text-align: 'center';
-    background: '#364d79';
+    height: 100vh;
   }
   .heroImage{
-    width: 100vw;
-    height:100vh;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+  @media screen and (max-width:1024px){}
+  @media screen and (max-width:768px){
+ 
+  }
+  @media screen and (max-width:480px){
+
   }

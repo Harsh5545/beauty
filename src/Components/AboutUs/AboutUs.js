@@ -14,21 +14,21 @@ function AboutUs() {
           </p>
           <ul>
             <li>
-              <ArrowRightOutlined />{" "}
+              <ArrowRightOutlined />
               <span>Extensions, Smoothing Services & Treatments</span>
             </li>
             <li>
-              {" "}
+          
               <ArrowRightOutlined /> <span>
                 Complete Skin & Hair Solution
-              </span>{" "}
+              </span>
             </li>
             <li>
-              {" "}
+          
               <ArrowRightOutlined /> <span>Bridal Makeup, Sider</span>
             </li>
             <li>
-              <ArrowRightOutlined />{" "}
+              <ArrowRightOutlined />
               <span>Modern salon & Welcoming Energy</span>
             </li>
           </ul>

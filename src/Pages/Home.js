@@ -1,10 +1,14 @@
+
 import React from "react";
 import AboutUs from "../Components/AboutUs/AboutUs";
+import ContactUs from "../Components/ContactUs/ContactUs";
 import Hero from "../Components/Hero/Hero";
 import Navbar from "../Components/Navbar/Navbar";
 import Pricing from "../Components/Pricing/Pricing";
 import Services from "../Components/Services/Services";
+import CustomFooter from "../Components/Footer/Footer"
 import style from "./home.module.css";
+
 
 function Home() {
   return (
@@ -27,6 +31,14 @@ function Home() {
     
         <Pricing />
       </div>
+      <div>
+    
+        <ContactUs />
+      </div>
+      {/* <div>
+    
+    <CustomFooter />
+  </div> */}
     </div>
   );
 }
