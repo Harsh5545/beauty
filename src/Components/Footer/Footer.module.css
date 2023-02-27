@@ -105,4 +105,14 @@ footer .wave#wave4{
 
 @media screen and (max-width:1024px){}
 @media screen and (max-width:768px){}
-@media screen and (max-width:480px){}
+@media screen and (max-width:480px){
+
+    footer .menu li a{
+        font-size: 1em;
+        color: #fff;
+        margin: 0 0.4rem;
+        display: inline-block;
+        transition: 0.5s;
+        
+    }
+}

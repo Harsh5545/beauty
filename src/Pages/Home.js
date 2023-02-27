@@ -28,17 +28,15 @@ function Home() {
         <Services />
       </div>
       <div>
-    
         <Pricing />
       </div>
       <div>
     
         <ContactUs />
       </div>
-      {/* <div>
-    
+      <div>
     <CustomFooter />
-  </div> */}
+  </div>
     </div>
   );
 }

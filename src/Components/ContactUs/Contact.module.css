@@ -60,7 +60,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap:1rem;
+      gap:4rem;
       margin-top: 5rem;
     }
     .Contact{
@@ -82,19 +82,19 @@
   @media screen and (max-width:480px){
 
 .input{
-  width: 18rem;
+  width: 16rem;
 }
 .btn{
-  width: 20rem;
+  width: 18rem;
 }
    
 .Contact{
-      padding: 0.8rem ;
-      width: 22rem;
+      padding: 0.6rem ;
+      width: 20rem;
     }
     .Map{
       height: 40vh;
-      width: 24rem;
+      width: 21rem;
       border-radius: 10px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }

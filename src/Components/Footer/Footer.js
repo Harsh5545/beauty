@@ -15,8 +15,8 @@ function CustomFooter() {
       </div>
       </div>
     <ul className={style.socialIcon}>
-      <li><a href="/">  <InstagramOutlined style={{ fontSize: '32px', color: '#fff' }}/></a></li>
-      <li><a href="/"><FacebookFilled  style={{ fontSize: '32px', color: '#fff' }}/></a></li>
+      <li><a href="https://www.instagram.com/diamond_beauty__zone/">  <InstagramOutlined style={{ fontSize: '32px', color: '#fff' }}/></a></li>
+      <li><a href="https://www.facebook.com/Diamondbeautyzone-103333572419215"><FacebookFilled  style={{ fontSize: '32px', color: '#fff' }}/></a></li>
       <li><a href="/"><YoutubeFilled   style={{ fontSize: '32px', color: '#fff' }}/></a></li>
     </ul>
 
