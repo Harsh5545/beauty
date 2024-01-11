@@ -59,6 +59,10 @@
         z-index: 10;
         transform: translateY(-100vh);
     }
+    .logoImage{
+        width: 180px;
+        height: 60px;
+    }
     .toggleNavbar {
         transform: none;
         background: #fff;

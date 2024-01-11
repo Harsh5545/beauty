@@ -3,6 +3,12 @@ import React from "react";
 import style from "./Footer.module.css";
 import {InstagramOutlined, FacebookFilled , YoutubeFilled} from '@ant-design/icons'
 function CustomFooter() {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return <footer>
     <div className={style.waves}>
     <div className={style.wave} id={style.wave1}>
@@ -21,14 +27,14 @@ function CustomFooter() {
     </ul>
 
     <ul className={style.menu}>
-    <li><a href="/">Home</a></li>
-    <li><a href="/">Why Us</a></li>  
-    <li><a href="/">Service</a></li>  
-    <li><a href="/">Pricing</a></li>  
-    <li><a href="/">Contact</a></li>  
+   <li> <a onClick={() => scrollToSection("/")}>Home</a></li>
+   <li>   <a onClick={() => scrollToSection("about")}>Why Us</a></li>
+   <li>  <a onClick={() => scrollToSection("service")}>Service</a></li>
+   <li>  <a onClick={() => scrollToSection("pricing")}>Pricing</a></li>
+   <li>  <a onClick={() => scrollToSection("contact")}>Contact</a></li>
     </ul>
     <p>
-    © 2023 Diamond Beauty Zone | All Rights Reserved
+    © 2023 Harshad Kajale | All Rights Reserved
     </p>
   </footer>;
 }

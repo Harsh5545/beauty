@@ -6,7 +6,7 @@ import style from "./Contact.module.css";
 
 function ContactUs() {
   return (
-    <div className={style.ContactContainer}>
+    <div id="contact" className={style.ContactContainer}>
       <div className={style.Contact}>
         <h1>Get In touch</h1>
         <p>Leave us a message</p>

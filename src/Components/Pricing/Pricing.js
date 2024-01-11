@@ -47,7 +47,7 @@ function Pricing() {
     },
   ];
   return (
-    <div className={style.PricingContainer}>
+    <div id="pricing" className={style.PricingContainer}>
       <h1>Our Pricing</h1>
 
       <div className={style.gridContainer}>

@@ -7,16 +7,25 @@ function Navbar() {
   const toggleNavbar = () => {
     setToggle(!toggle);
   };
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className={style.Navbar}>
       <div className={style.container}>
-        <img className={style.logoImage} src={Diamond} alt="Beauty Parlour" />
+        <a href="/">
+        <img className={style.logoImage} src={Diamond} alt="Beauty Parlour" /> </a>
         <nav className={toggle ?`${style.menuItem} ${style.toggleNavbar}` : `${style.menuItem}`}>
-          <a href="/">Home</a>
-          <a href="/">Why Us</a>
-          <a href="/">Service</a>
-          <a href="/">Pricing</a>
-          <a href="/">Contact</a>
+          <a onClick={() => scrollToSection("/")}>Home</a>
+          <a onClick={() => scrollToSection("about")}>Why Us</a>
+          <a onClick={() => scrollToSection("service")}>Service</a>
+          <a onClick={() => scrollToSection("pricing")}>Pricing</a>
+          <a onClick={() => scrollToSection("contact")}>Contact</a>
           <button className={style.btnClose} onClick={toggleNavbar}>
             X
           </button>

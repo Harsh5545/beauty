@@ -12,7 +12,7 @@ import style from "./home.module.css";
 
 function Home() {
   return (
-    <div className={style.container}>
+    <div id="/" className={style.container}>
       <div className={style.Navbar}>
  
         <Navbar />

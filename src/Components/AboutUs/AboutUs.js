@@ -4,7 +4,7 @@ import { ArrowRightOutlined } from "@ant-design/icons";
 import CustomButton from "../../Atom/Button/CustomButton";
 function AboutUs() {
   return (
-    <div className={style.AboutWrapper}>
+    <div id="about" className={style.AboutWrapper}>
       <div className={style.AboutContainer}>
         <div className={style.AboutContent}>
           <h2>Why Our Clients Choose Us</h2>
@@ -33,7 +33,7 @@ function AboutUs() {
             </li>
           </ul>
           <div className={style.Aboutbtn}>
-          <CustomButton ButtonText="Read More" className={style.AboutButton} />
+          <CustomButton onClick={() => window.open('https://wa.me/+918888168675')} ButtonText="Read More" className={style.AboutButton} />
           </div>
         </div>
         <div className={style.Aboutimg}>

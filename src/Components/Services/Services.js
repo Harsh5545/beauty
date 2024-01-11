@@ -6,7 +6,7 @@ import Body from "../Images/body-massage.png";
 import Spa from "../Images/spa.png";
 function Services() {
   return (
-    <div className={style.ServicesContainer}>
+    <div id="service" className={style.ServicesContainer}>
       <h1>Our Services</h1>
 
       <div className={style.gridContainer}>
