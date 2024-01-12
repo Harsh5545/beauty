@@ -36,7 +36,7 @@ function CustomFooter() {
     </ul>
 
     <ul  className={style.menu}>
-   <li> <a onClick={() => scrollToSection("/")}>Home</a></li>
+   <li> <a onClick={() => scrollToSection("/home")}>Home</a></li>
    <li>   <a onClick={() => scrollToSection("about")}>Why Us</a></li>
    <li>  <a onClick={() => scrollToSection("service")}>Service</a></li>
    <li>  <a onClick={() => scrollToSection("pricing")}>Pricing</a></li>

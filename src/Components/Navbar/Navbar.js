@@ -21,7 +21,7 @@ function Navbar() {
         <a href="/">
         <img className={style.logoImage} src={Diamond} alt="Beauty Parlour" /> </a>
         <nav className={toggle ?`${style.menuItem} ${style.toggleNavbar}` : `${style.menuItem}`}>
-          <a onClick={() => scrollToSection("/")}>Home</a>
+          <a onClick={() => scrollToSection("/home")}>Home</a>
           <a onClick={() => scrollToSection("about")}>Why Us</a>
           <a onClick={() => scrollToSection("service")}>Service</a>
           <a onClick={() => scrollToSection("pricing")}>Pricing</a>
