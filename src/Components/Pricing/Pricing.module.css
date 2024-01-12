@@ -2,8 +2,11 @@
     display: flex;
     justify-content: center;
     font-size: 2.5rem;
+    
 }
-
+.PricingContainer{
+  overflow: hidden;
+}
 .gridContainer {
     display: grid;
     grid-template-columns: auto auto;

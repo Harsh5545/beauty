@@ -1,33 +1,66 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import emailjs from "emailjs-com";
 import CustomButton from "../../Atom/Button/CustomButton";
 import CustomInput from "../../Atom/Input/CustomInput";
 import style from "./Contact.module.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function ContactUs() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
+  }, []);
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // Replace with your actual EmailJS service ID, template ID, and public key
+    const serviceId = "service_5wf96oz";
+    const templateId = "template_jy39bhn";
+    const publicKey = "cShZR-WTYoT509VKn";
+
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
   return (
     <div id="contact" className={style.ContactContainer}>
-      <div className={style.Contact}>
+      <div data-aos="flip-left" className={style.Contact}>
         <h1>Get In touch</h1>
         <p>Leave us a message</p>
-        <CustomInput className={style.input} placeholder="Name" />
-        <CustomInput className={style.input} placeholder="Email" />
-        <CustomInput
-          className={style.input}
-          placeholder="Write your Message here"
-        />
-        <CustomButton className={style.btn} ButtonText="Send Message" />
+        <form onSubmit={sendEmail}>
+          <CustomInput name="name" className={style.input} placeholder="Name" />
+          <CustomInput
+            name="email"
+            className={style.input}
+            placeholder="Email"
+          />
+          <CustomInput
+            name="message"
+            className={style.input}
+            placeholder="Write your Message here"
+          />
+          <CustomButton
+            type="submit"
+            className={style.btn}
+            ButtonText="Send Message"
+            onClick={()=> "https://www.instagram.com/diamond_beauty__zone/"}
+          />
+        </form>
       </div>
-      <div className={style.MapContainer}>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11356.474075845408!2d72.99255842186518!3d21.642012379657842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be021643cdf2191%3A0x447f7723901e752f!2sDiamond%20beauty%20zone!5e0!3m2!1sen!2sin!4v1677310190978!5m2!1sen!2sin"
-          className={style.Map}
-          style={{border:"0"}}
-          title="location"
-          loading="lazy"
-
-        ></iframe>
-      </div>
+      {/* ... (rest of your component) */}
     </div>
   );
 }

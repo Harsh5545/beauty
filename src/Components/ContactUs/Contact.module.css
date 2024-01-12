@@ -1,5 +1,6 @@
 .ContactContainer{
     max-width: 1300px;
+    overflow: hidden;
     margin: 8rem auto;
     padding-inline: 1rem;
     display: flex;

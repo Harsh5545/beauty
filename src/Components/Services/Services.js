@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Services.module.css";
 import ContentCutIcon from "@mui/icons-material/ContentCut";
 import Skincare from "../Images/skincare.png";
 import Body from "../Images/body-massage.png";
 import Spa from "../Images/spa.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Services() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
+  }, []);
   return (
     <div id="service" className={style.ServicesContainer}>
-      <h1>Our Services</h1>
+      <h1  data-aos="fade-left">Our Services</h1>
 
-      <div className={style.gridContainer}>
-        <div className={style.gridItem}>
+      <div data-aos="fade-right" className={style.gridContainer}>
+        <div   className={style.gridItem}>
           <i>
             <ContentCutIcon className={style.gridIcon}  />
           </i>

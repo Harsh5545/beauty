@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Pricing.module.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Pricing() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
+  }, []);
   const PricingList = [
     {
       id: 1,
@@ -47,10 +55,10 @@ function Pricing() {
     },
   ];
   return (
-    <div id="pricing" className={style.PricingContainer}>
+    <div data-aos="flip-right" id="pricing" className={style.PricingContainer}>
       <h1>Our Pricing</h1>
 
-      <div className={style.gridContainer}>
+      <div  data-aos="zoom-in-right" className={style.gridContainer}>
         {PricingList.map((x) => {
           return (
             <div

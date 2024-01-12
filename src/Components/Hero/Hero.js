@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Hero.module.css";
 import { Carousel } from "antd";
 import Button from "../../Atom/Button/Button";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Hero() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      offset: 100,
+    });
+  }, []);
   const imageSlide = [
     {
       id: 1,
@@ -28,9 +36,9 @@ function Hero() {
   return (
     <Carousel autoplay dots={false} infinite easing="linear">
       {imageSlide.map((x) => (
-        <div key={x.id} className={style.HeroWrapper}>
+        <div data-aos="flip-up" key={x.id} className={style.HeroWrapper}>
           <img className={style.heroImage} src={x.img} alt={`Slide ${x.id}`} />
-          <div className={style.content}>
+          <div data-aos="zoom-in" className={style.content}>
             <h1 className={style.heading}>{x.heading}</h1>
             <p className={style.para}>{x.content}</p>
             <Button onClick={() => window.open('https://wa.me/+918888168675')} />

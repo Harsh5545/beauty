@@ -20,6 +20,7 @@
 .menuItem{
     display: flex;
     gap:3rem;  
+    cursor: pointer;
     /* font-size: 1.2rem; */
    
 }

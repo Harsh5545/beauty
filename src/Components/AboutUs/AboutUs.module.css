@@ -10,6 +10,7 @@
     margin: 2rem auto;
     height: 100%;
     display: flex;
+    overflow: hidden;
     align-items: center;
     padding: 2rem;
     justify-content: space-between;
